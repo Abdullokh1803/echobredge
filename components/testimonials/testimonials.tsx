@@ -47,7 +47,7 @@ const Testimonials = ({ id }: TestimonialProps) => {
       <h1 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
         Testimonials & Case Studies
       </h1>
-      <div className="mt-20 h-[45vh] max-[450px]:h-[92vh] w-[90%] md:w-[80%] mx-auto">
+      <div className="mt-20 h-[48vh] max-[450px]:h-[85vh] w-[90%] md:w-[80%] mx-auto">
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={50}

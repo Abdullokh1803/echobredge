@@ -6,11 +6,11 @@ const CallToAction = () => {
       <h2 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
         Join the Future of Global Communication
       </h2>
-      <div className="flex justify-around w-[90%] md:w-[80%] my-20 mx-auto p-8 bg-white shadow-md rounded-md">
-        <button className="w-[40%] max-[450px]:py-3 min-[425px]:text-[14px] md:px-8 md:py-4 px-6 text-white font-semibold text-base bg-[#8A2BE2] hover:bg-[#6200be] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
+      <div className="flex max-[450px]:flex-col max-[450]:gap-6 justify-around w-[90%] max-[450px]:w-[85%] my-20 mx-auto p-8 bg-white shadow-md rounded-md">
+        <button className="max-[450px]:w-[100%] w-[40%] max-[450px]:py-4 md:px-8 md:py-4 px-6 text-white font-semibold text-base bg-[#8A2BE2] hover:bg-[#6200be] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
           Try For Free
         </button>
-        <button className="w-[40%] max-[450px]:py-3 min-[425px]:text-[14px] md:px-8 md:py-4 px-6 text-white font-semibold text-base bg-[#0e86fd] hover:bg-[#0069d2] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
+        <button className="max-[450px]:w-[100%] w-[40%] max-[450px]:py-4 md:px-8 md:py-4 px-6 text-white font-semibold text-base bg-[#0e86fd] hover:bg-[#0069d2] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
           Book a Demo
         </button>
       </div>

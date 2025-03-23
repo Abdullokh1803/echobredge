@@ -57,7 +57,7 @@ const WhoItsFor = ({id}: whoItsForProps) => {
               <div className="text-3xl w-14 h-14 bg-[#d0d0d05d] max-[450px]:text-xl max-[450px]:w-14 max-[450px]:h-10 flex items-center justify-center flex-col rounded-full">
                 <span>{card.icon}</span>
               </div>
-              <div className="w-[450px] text-start pl-4">
+              <div className="w-[320px] text-start pl-4">
                 <span className="font-semibold">{card.title}</span>
                 <p className="text-gray-700 text-[13px]">{card.text}</p>
               </div>

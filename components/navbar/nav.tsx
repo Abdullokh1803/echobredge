@@ -34,7 +34,7 @@ const Nav = ({ navShow }: navProps) => {
         <h1 className="select-none text-md max-[450px]:text-[22px] font-bold md:text-[26px] text-[#8A2BE2]">
           <span className="text-[#0e86fd]">Echo</span>Bridge
         </h1>
-        <div className="max-[450px]:hidden p-[3px] gap-2 item-center lg:flex shadow-md rounded-full bg-white">
+        <div className="max-[450px]:hidden max-[770px]:hidden p-[3px] gap-2 item-center lg:flex shadow-md rounded-full bg-white">
           {navLinks.map((link) => {
             return (
               <Link href={link.url} key={link.id}>
