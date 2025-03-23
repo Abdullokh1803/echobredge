@@ -18,7 +18,7 @@ const Hero = ({ id }: heroProps) => {
               data-aos="fade-up"
               className="text-2xl sm:text-4xl md:text-[44px] mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]"
             >
-              Speak Any Language, Understand Every Voice – Instantly with AI.
+              Spak Any Language, Understand Every Voice – Instantly with AI.
             </h1>
             <p className="text-gray-700 text-[16px]">
               EchoBridge is an AI-powered video conferencing platform with
@@ -40,7 +40,7 @@ const Hero = ({ id }: heroProps) => {
             data-aos-delay="200"
             className="hidden lg:block"
           >
-            <Image src="/images/cobe.png" alt="hero" width={700} height={700} />
+            <Image src="/images/echobridge2.png" alt="hero" width={700} height={700} />
           </div>
         </div>
       </div>

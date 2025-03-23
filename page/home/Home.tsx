@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useEffect } from 'react'
 import Hero from './../../components/hero/hero';
 import HowItWorks from '@/components/howItWorks/how_it_works';
@@ -14,8 +13,8 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
 
-  useEffect(()=> {
-    const initAOS = async ()=> {
+  useEffect(() => {
+    const initAOS = async () => {
       await import('aos')
       AOS.init({
         duration: 1000,
