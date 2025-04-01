@@ -9,11 +9,11 @@ const Hero = ({ id }: heroProps) => {
   return (
     <header
       id={id}
-      className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#f7f3fb]"
+      className="w-full pt-[4vh] md:pt-[12vh] h-full bg-[#f7f3fb]"
     >
       <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-          <div>
+        <div className="flex items-center gap-12 max-[450px]:flex-col-reverse pt-[100px]">
+          <div className="w-[50%] max-[450px]:w-full">
             <h1
               data-aos="fade-up"
               className="text-2xl sm:text-4xl md:text-[44px] mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]"
@@ -38,7 +38,7 @@ const Hero = ({ id }: heroProps) => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="hidden lg:block"
+            className="block"
           >
             <Image src="/images/heroImg.png" alt="hero" width={700} height={700} />
           </div>
