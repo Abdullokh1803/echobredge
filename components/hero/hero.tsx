@@ -11,8 +11,8 @@ const Hero = ({ id }: heroProps) => {
       id={id}
       className="w-full pt-[4vh] md:pt-[12vh] h-full bg-[#f7f3fb]"
     >
-      <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-full mx-auto">
-        <div className="flex items-center gap-12 max-[450px]:flex-col-reverse pt-[100px]">
+      <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-[80vh] max-[450px]:h-full mx-auto">
+        <div className="flex items-center gap-12 max-[450px]:flex-col-reverse max-[450px]:pt-[100px]">
           <div className="w-[50%] max-[450px]:w-full">
             <h1
               data-aos="fade-up"
