@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type heroProps = {
   id: string;
@@ -27,20 +28,25 @@ const Hero = ({ id }: heroProps) => {
               preserving users natural voices through AI cloning.
             </p>
             <div className="flex mt-8 mb-8 items-center space-x-4">
-              <button className="max-[450px]:py-3 min-[425px]:text-[14px] md:px-8 md:py-3 px-6 text-white font-semibold text-base bg-[#8A2BE2] hover:bg-[#6200be] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
-                Try For Free
-              </button>
-              <button className="max-[450px]:py-3 min-[425px]:text-[14px] md:px-8 md:py-3 px-6 text-white font-semibold text-base bg-[#0e86fd] hover:bg-[#0069d2] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
-                Book a Demo
-              </button>
+              <Link href="https://echobridge.net/">
+                <button className="max-[450px]:py-3 min-[425px]:text-[14px] md:px-8 md:py-3 px-6 text-white font-semibold text-base bg-[#8A2BE2] hover:bg-[#6200be] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
+                  Try For Free
+                </button>
+              </Link>
+              <Link href="https://echobridge.net/">
+                <button className="max-[450px]:py-3 min-[425px]:text-[14px] md:px-8 md:py-3 px-6 text-white font-semibold text-base bg-[#0e86fd] hover:bg-[#0069d2] transition-all duration-200 rounded-full shadow-sm cursor-pointer">
+                  Book a Demo
+                </button>
+              </Link>
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            className="block"
-          >
-            <Image src="/images/heroImg.png" alt="hero" width={700} height={700} />
+          <div data-aos="fade-up" data-aos-delay="200" className="block">
+            <Image
+              src="/images/heroImg.png"
+              alt="hero"
+              width={700}
+              height={700}
+            />
           </div>
         </div>
       </div>

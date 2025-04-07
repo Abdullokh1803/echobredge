@@ -44,9 +44,11 @@ const Nav = ({ navShow }: navProps) => {
           })}
         </div>
         <div className="flex items-center space-x-4">
-          <button className="max-[450px]:py-3 max-[450px]:text-[14px] md:px-8 md:py-3 px-6 text-white font-semibold text-base bg-[#8A2BE2] hover:bg-[#6200be]  transition-all duration-200 rounded-full shadow-sm cursor-pointer">
-            Try For Free
-          </button>
+          <Link href="https://echobridge.net/">
+            <button className="max-[450px]:py-3 max-[450px]:text-[14px] md:px-8 md:py-3 px-6 text-white font-semibold text-base bg-[#8A2BE2] hover:bg-[#6200be]  transition-all duration-200 rounded-full shadow-sm cursor-pointer">
+              Try For Free
+            </button>
+          </Link>
           <HiBars3BottomRight
             onClick={navShow}
             className="w-8 h-8 cursor-pointer text-black lg:hidden"

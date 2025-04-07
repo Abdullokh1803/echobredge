@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from './../../components/hero/hero';
 import HowItWorks from '@/components/howItWorks/how_it_works';
 import Advantages from './../../components/advantages/advantages';
@@ -9,9 +9,12 @@ import Price from './../../components/price/price';
 import Footer from './../../components/footer/footer';
 import CallToAction from './../../components/cta/call_to_action';
 import AOS from 'aos';
+import Modal from '@/components/modal/modal';
 import 'aos/dist/aos.css';
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
 
   useEffect(() => {
     const initAOS = async () => {
@@ -33,7 +36,8 @@ const Home = () => {
       <Advantages id='features' />
       <WhoItsFor id='who-its-for' />
       <Testimonials id='testimonials' />
-      <Price id='pricing' />
+      <Price id='pricing' setIsOpen={setIsOpen} />
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       <CallToAction />
       <Footer />
     </div>

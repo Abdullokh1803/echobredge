@@ -3,9 +3,10 @@ import PriceCard from "./price_card";
 
 type priceProps = {
   id: string;
+  setIsOpen: (isOpen: boolean) => void;
 };
 
-const Price = ({ id }: priceProps) => {
+const Price = ({ id, setIsOpen }: priceProps) => {
   const plans = [
     {
       id: 1,
@@ -54,7 +55,7 @@ const Price = ({ id }: priceProps) => {
       <div className="w-[90%]  md:w-[80%] mt-20 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
         {plans.map((plan, i) => (
           <div data-aos="flip-left" key={i}>
-            <PriceCard plan={plan} />
+            <PriceCard plan={plan} setIsOpen={setIsOpen} />
           </div>
         ))}
       </div>

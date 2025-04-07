@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 
@@ -9,9 +11,11 @@ type priceCardProps = {
     quantity: string;
     pluses: string[];
   };
+  setIsOpen: (isOpen: boolean) => void;
 };
 
-const PriceCard = ({ plan }: priceCardProps) => {
+const PriceCard = ({ plan, setIsOpen }: priceCardProps) => {
+
   return (
     <div className="bg-white flex flex-col justify-between p-12 rounded-lg shadow-lg h-[636px]">
       <div>
@@ -40,10 +44,14 @@ const PriceCard = ({ plan }: priceCardProps) => {
         </div>
       </div>
       <div>
-        <button className="rounded-xl bg-[#8A2BE2] cursor-pointer block w-full p-4 text-base md:text-lg text-white font-bold hover:bg-[#6200be] transition-all duration-300 ">
+        <button
+          onClick={() => setIsOpen(true)}
+          className="rounded-xl bg-[#8A2BE2] cursor-pointer block w-full p-4 text-base md:text-lg text-white font-bold hover:bg-[#6200be] transition-all duration-300 "
+        >
           Get {plan.plan}
         </button>
       </div>
+      
     </div>
   );
 };
